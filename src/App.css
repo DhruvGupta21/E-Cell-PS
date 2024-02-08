@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: #e0fec8;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+nav {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1rem;
+  display: flex;
+  position: relative;
+  background-color: #006c48;
+}
+h1 {
+  width: 86%;
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  flex-grow: 3;
+}
+.log-in,
+.sign-in {
+  width: 7%;
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0.25rem 0.5rem;
+  background-color: none;
+  border: none;
+  outline: none;
+}
+.log-in {
+  color: #f2f2f2;
+  background-color: #006c48;
+}
+.sign-in {
+  padding: 0.5rem 0;
+  color: #006c48;
+  background-color: #c5e5d0;
+  border-radius: 1rem;
+}
+.circle{
+  padding: 0.5rem;
+  width: auto;
+  border-radius: 50%;
+}
+
+.container {
+  width: 100%;
+  height: fit-content;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container img{
+  width: 100%;
+  z-index: -1;
+}
+
+.container p{
+  width: 40%;
+  color: white;
+  font-size: 2.65rem;
+  position: absolute;
+  left: 10%;
+  text-align: center;
+}
+.cards-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.card{
+  width: 100%;
+  height: 60vh;
+  padding: 0 5%;
+  background-color: whitesmoke;
+  color: #006c48;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card:nth-child(even){
+  background-color: #e0fec8;
+}
+
+.content{
+  width: 80%;
+  padding: 10%;
+  text-align: center;
+}
+.content h3{
+  padding: 1rem;
+  font-size: 2.5rem;
+}
+.content p{
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+.content button{
+  padding: 0.75rem;
+  color: white;
+  background-color: #006c48;
+  border-radius: 2.5rem;
+  font-size: 1.75rem;
+  border: none;
+  outline: none;
+}
+.card img{
+  padding: 20px 10px 0 10px;
+  width: 60%;
+  height: 80%;
+}
+
+.road{
+  position: absolute;
+}
+
+.cards-container-dashboard{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.card-dash{
+  width: 100%;
+  height: 50%;
+  padding: 2.5% 2.5%;
+  color: #006c48;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bold{
+  font-weight: 500;
+}
+.card-dash img{
+  width: 50%;
+  height: 100%;
+}

@@ -12,9 +12,19 @@ export function Navbar_dashboard() {
   return (
     <nav>
       <h1>Green Route</h1>
-      <button className="log-in">Map</button>
+      <button className="log-in">Cart</button>
       <button className="sign-in circle">👤</button>
     </nav>
   );
 }
 
+
+export function Navbar_flash(){
+  return (
+    <nav>
+      <h1>Green Route</h1>
+      <button className="log-in">MAP</button>
+      <button className="sign-in circle">👤</button>
+    </nav>
+  );
+}

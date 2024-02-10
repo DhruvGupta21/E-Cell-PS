@@ -1,19 +1,55 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import { Navbar_login, Navbar_dashboard } from "./Navbar";
 import Hero from "./Hero";
 import { Cards_login, Cards_dashboard } from "./Cards";
 import Shop from "./Shop";
+import Map from "./Map";
 
 function App() {
   return (
-    <>
-      {/* <Navbar_login />
-      <Hero />
-      <Cards_login /> */}
-      <Navbar_dashboard />
-      {/* <Cards_dashboard /> */}
-      <Shop />
-    </>
+    <div className="App">
+      <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <div>
+              <Navbar_login />
+              <Hero />
+              <Cards_login />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/dashboard"
+          element={
+            <div>
+              <Navbar_dashboard />
+              <Cards_dashboard />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/shop"
+          element={
+            <div>
+              <Navbar_dashboard />
+              <Shop />
+            </div>
+          }
+        ></Route>
+        <Route
+          path="/map"
+          element={
+            <div>
+              <Navbar_dashboard />
+              <Map />
+            </div>
+          }
+        ></Route>
+      </Routes>
+    </div>
   );
 }
 

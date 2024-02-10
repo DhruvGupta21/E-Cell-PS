@@ -15,7 +15,6 @@ body::-webkit-scrollbar {
 nav {
   width: 100%;
   padding: 0.5rem 1rem;
-  margin-bottom: 1rem;
   display: flex;
   position: relative;
   background-color: #006c48;
@@ -33,9 +32,9 @@ h1 {
   font-size: 1rem;
   font-weight: 500;
   margin: 0.25rem 0.5rem;
-  background-color: none;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .log-in {
   color: #f2f2f2;
@@ -118,6 +117,7 @@ h1 {
   font-size: 1.75rem;
   border: none;
   outline: none;
+  cursor: pointer;
 }
 .card img {
   padding: 20px 10px 0 10px;
@@ -213,4 +213,55 @@ h1 {
 }
 #rel{
   position: relative;
+}
+
+.map-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 2.5%;
+}
+
+.select-container{
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.select-container select{
+  height: 10%;
+  width: 80%;
+  padding: 1rem;
+}
+.select-container button{
+  height: 8%;
+  width: 30%;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  border: none;
+  background-color: #006c48;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.img{
+  width: 55%;
+  height: 100%;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+.img img{
+  width: 90%;
+  height: 90%;
+  border: 2px solid #006c48;
 }

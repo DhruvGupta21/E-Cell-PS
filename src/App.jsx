@@ -1,10 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import { Navbar_login, Navbar_dashboard, Navbar_flash, Navbar_bags } from "./Navbar";
+import { Navbar_login, Navbar_dashboard} from "./Navbar";
 import Hero from "./Hero";
 import { Cards_login, Cards_dashboard } from "./Cards";
 import Shop from "./Shop";
-import Map from "./Map";
 import Map from "./Map";
 
 function App() {

@@ -17,14 +17,3 @@ export function Navbar_dashboard() {
     </nav>
   );
 }
-
-
-export function Navbar_flash(){
-  return (
-    <nav>
-      <h1>Green Route</h1>
-      <button className="log-in">MAP</button>
-      <button className="sign-in circle">👤</button>
-    </nav>
-  );
-}

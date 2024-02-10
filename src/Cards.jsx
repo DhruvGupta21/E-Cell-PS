@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export function Cards_login() {
   return (
     <div className="cards-container">
@@ -54,7 +56,7 @@ export function Cards_dashboard() {
             nesciunt quis modi, magnam quibusdam cumque aliquam aperiam harum
             obcaecati unde.
           </p>
-          <button>Search for Routes</button>
+          <Link to="/map"><button>Search for Routes</button></Link>
         </div>
       </div>
       <div className="card-dash">
@@ -65,7 +67,7 @@ export function Cards_dashboard() {
             omnis soluta voluptate quas earum neque mollitia voluptatum maxime
             est assumenda. Autem.
           </p>
-          <button>Buy Bags</button>
+          <Link to="/shop"><button>Buy Bags</button></Link>
         </div>
         <img src="shop-bag.jpg" alt="" />
       </div>

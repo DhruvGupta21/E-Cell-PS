@@ -1,9 +1,12 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import "./Form.css";
+
 export function Navbar_login() {
   return (
     <nav>
       <h1>Green Route</h1>
-      <button className="log-in">Log In</button>
-      <button className="sign-in">Sign In</button>
+      <Link to="/signin"><button className='dashboard-button'>Dashboard</button></Link>
     </nav>
   );
 }
